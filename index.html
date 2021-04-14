@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- wow lib -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <style>
+      body{
+        overflow-y: hidden;
+      }
+    </style>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+  </head>
+  <body>
+    <div class="container-homepage">
+      <div class="heading-box">
+        <h2 class="heading-content wow bounceInLeft">Trò chơi</h2>
+        <h2
+          class="heading-content wow bounceInRight custom-fade-in"
+          data-wow-delay="0.2s"
+        >
+          Âm nhạc
+        </h2>
+        <div class="btn heading-btn btn-fill custom-fade-in">
+          <a href="pickTopic.html" class="custom-fade-in">Bắt đầu</a>
+        </div>
+      </div>
+    </div>
+    <audio controls  autoplay src="./audio/clapSound.mp3" type="audio/mpeg" style="visibility: hidden;" >
+    </audio>
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

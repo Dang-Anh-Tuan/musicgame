@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vì tôi còn sống</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- wow lib -->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <style>
+      .container-lyric p{
+        padding: 12px 0px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container-app">
+        <h3 class="song-name  wow fadeInDown">
+            Vì tôi còn sống
+        </h3>
+        <div class="container-lyric  wow fadeInDown">
+            <p class="lyric-line">Cứ sai đi vì cuộc đời cho phép, cứ yêu đi dù rằng mình ngu si</p>    
+            <p class="lyric-line">Ai lừa ai, ai hờn ai ai giận ai ai thù ai cho qua đi</p>
+            <p class="lyric-line">Cứ đam mê dù nhiều người cười chê</p>
+            <p class="lyric-line">Và cứ vui lên, vì ta không.. cô đơn</p>
+            <p class="lyric-line"> Vì tôi còn sống Vì tôi còn hát lên Vì tôi còn viết lên 
+                <input
+                id="input-answer"
+                type="text"
+                class="input--answer"
+                name="answer"
+                title="bao điều trong lòng tôi"
+                value=""
+              /> 
+            </p>
+        </div>
+        <div class="listBtn row">
+            <ul>
+                <li id="startBtn" class="row btn-pd wow bounceInUp" onclick="playBeat()"  data-wow-delay="0.2s"><button class="lyric-btn btn-Start">Bắt đầu</button></li>
+                <li id="stopBtn" class="row btn-pd wow bounceInUp" onclick="stopBeat()"  data-wow-delay="0.4s"><button class="lyric-btn btn-Stop">Tạm dừng</button></li>
+                <li id="checkBtn" class="row btn-pd wow bounceInUp" onclick="checkAnswer()"  data-wow-delay="0.6s"><button class="lyric-btn btn-Check">Kiểm tra</button></li>
+                <li class="row btn-pd wow  bounceInUp"  data-wow-delay="0.8s"><a href="../pickTopic.html" class="lyric-btn btn-Back">Quay lại</a></li>
+            </ul>
+        </div>
+        <audio controls autoplay id="beat-bg" src="../audio/beatBackground.mp3" type="audio/mpeg" style="visibility: hidden;">     </audio>
+    </div>
+
+    <audio
+        id="beat-song"
+        title="vitoiconsong"
+        src="../audio/vitoiconsong.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <audio
+        id="beat-correct"
+        title="sautatca"
+        src="../audio/correctBeat.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <audio
+        id="beat-wrong"
+        title="sautatca"
+        src="../audio/wrongBeat.mp3"
+        type="audio/mpeg"
+      ></audio>
+
+    <script> new WOW().init(); </script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

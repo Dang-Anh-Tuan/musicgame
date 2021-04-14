@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- wow lib -->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+
+    <!-- link bootstrap -->
+</head>
+<body>
+    <script> new WOW().init(); </script>
+    
+    <div class="container-app">
+        <div class="container-heading-content">
+            <h2 class="heading-app-content neon wow fadeInDown" data-text="Chọn chủ đề">
+                Chọn chủ đề
+            </h2>
+        </div>
+        <div class="container-topic">
+            <div class="row wow container-name-topic fadeInUp">
+                <div class="btn-choose-topic" >
+                    <div class="container-fillbtn left-in">
+                        <a href="listsongYouth.html" class="custom-fade-in">Tuổi trẻ</a>
+                    </div>
+                </div>
+                <div class="btn-choose-topic" >
+                    <div class="container-fillbtn right-in">
+                        <a href="listsongLove.html" class="custom-fade-in">Tình yêu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio controls autoplay id="beat-bg" src="../audio/beatBackground.mp3" type="audio/mpeg" style="visibility: hidden;">     </audio>
+    </div>
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ông bà anh</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- wow lib -->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <style>
+      .container-lyric p{
+        padding: 10px 0px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container-app">
+        <h3 class="song-name  wow fadeInDown">
+            Ông bà anh
+        </h3>
+        <div class="container-lyric  wow fadeInDown">
+            <p class="lyric-line">Anh và em yêu nhau thời xe máy ô tô </p>    
+            <p class="lyric-line">Anh và em yêu nhau thời Facebook, Zalo </p>
+            <p class="lyric-line">Anh và em yêu nhau thời tay cầm Oppo </p>
+            <p class="lyric-line">Anh và em yêu nhau ngày tháng trôi mau vì</p>
+            <p class="lyric-line">Ta chẳng nói chuyện gì với nhau</p>
+            <p class="lyric-line">Ngồi bên nhau <input
+              style="font-size: 2.5vh;"
+              id="input-answer"
+              type="text"
+              class="input--answer"
+              name="answer"
+              title="cầm điện thoại thật lâu"
+              value=""
+            /> </p>
+            <p class="lyric-line">Và có nhiều lúc em giận dỗi khi, anh chẳng muốn khoe em với thiên hạ hiếu kì</p>
+        </div>
+        <div class="listBtn row">
+            <ul>
+                <li id="startBtn" class="row btn-pd wow bounceInUp" onclick="playBeat()"  data-wow-delay="0.2s"><button class="lyric-btn btn-Start">Bắt đầu</button></li>
+                <li id="stopBtn" class="row btn-pd wow bounceInUp" onclick="stopBeat()"  data-wow-delay="0.4s"><button class="lyric-btn btn-Stop">Tạm dừng</button></li>
+                <li id="checkBtn" class="row btn-pd wow bounceInUp" onclick="checkAnswer()"  data-wow-delay="0.6s"><button class="lyric-btn btn-Check">Kiểm tra</button></li>
+                <li class="row btn-pd wow  bounceInUp"  data-wow-delay="0.8s"><a href="../pickTopic.html" class="lyric-btn btn-Back">Quay lại</a></li>
+            </ul>
+        </div>
+        <audio controls autoplay id="beat-bg" src="../audio/beatBackground.mp3" type="audio/mpeg" style="visibility: hidden;">     </audio>
+    </div>
+    <audio
+      id="beat-song"
+      title="ongbaanh"
+      src="../audio/ongbaanh.mp3"
+      type="audio/mpeg"
+    ></audio>
+    <audio
+      id="beat-correct"
+      title="sautatca"
+      src="../audio/correctBeat.mp3"
+      type="audio/mpeg"
+    ></audio>
+    <audio
+      id="beat-wrong"
+      title="sautatca"
+      src="../audio/wrongBeat.mp3"
+      type="audio/mpeg"
+    ></audio>
+    <script> new WOW().init(); </script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
