@@ -410,6 +410,21 @@ body {
 }
 
 @media (max-width: 740px) {
+  .container-homepage{
+    background: var(--bgcolor);
+  }
+
+  .heading-box{
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading-content{
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
   .heading-content {
     font-size: 4rem;
   }
